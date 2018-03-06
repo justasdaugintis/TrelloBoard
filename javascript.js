@@ -2,7 +2,7 @@ var listClasses=[]
 var n=0
 var textID=0
 var btnID=0
-
+var f=0
 
 
 function newDiv() {
