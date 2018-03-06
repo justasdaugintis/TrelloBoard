@@ -1,0 +1,25 @@
+[class="0"] {
+    color:red;
+    width: 300px;
+    height: auto;
+}
+[class="1"] {
+    color:gainsboro;
+    width: 300px;
+    height: auto;
+}
+[class="2"] {
+    color:ghostwhite;
+    width: 300px;
+    height: auto;
+}
+[class="3"] {
+    color: greenyellow
+}
+[class="4"] {
+    color:green
+}
+
+.button{
+    border: none;
+}
