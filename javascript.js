@@ -12,7 +12,7 @@ function newElement() {
      else {
       document.getElementById("tasks").appendChild(li);  
     }
-
+console.log('yo matey')
 
     document.querySelector('.listItem').addEventListener('click', function(){
 
