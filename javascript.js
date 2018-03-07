@@ -55,9 +55,6 @@ function newDiv() {
 }
 
 
-
-
-
 function newElement() {
     var xx = event.target.id
     var xy = parseInt(xx)
@@ -70,12 +67,27 @@ function newElement() {
     li.appendChild(tt);
     li.setAttribute('class', 'listItem');
 
+ 
+
+
     if (inputValue === '') {
       return null
     }
      else {
-      document.getElementById(xx).appendChild(li);  
+     
+        document.getElementById(xx).appendChild(li); 
+        var list =  document.getElementById(xx).appendChild(li); 
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+
+    ev.target.classList.toggle('checked');
+
+
+
+    
     }
 
     $(".toDoText").val("")
-}
+})
+     }
+    }
