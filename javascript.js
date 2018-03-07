@@ -5,8 +5,10 @@ var btnID=0
 var f=0
 
 
+
 function newDiv() {
 
+    
     
     var box = document.createElement("div");
     var inputValue = document.getElementById("myInput").value;
@@ -46,15 +48,17 @@ function newDiv() {
    document.getElementById(n).appendChild(textField)
    document.getElementById(n).appendChild(btn)
    
-
+   
    n++
    textID++
    btnID++
    $("#myInput").val("")
-   console.log(n)
+
+ 
+   
+
+     
 }
-
-
 
 
 
@@ -79,3 +83,5 @@ function newElement() {
 
     $(".toDoText").val("")
 }
+
+
