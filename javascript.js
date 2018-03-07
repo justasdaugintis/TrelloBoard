@@ -50,7 +50,7 @@ function newDiv() {
    n++
    textID++
    btnID++
-   document.getElementById('.myInput').innerHTML = ""
+   $("#myInput").val("")
    console.log(n)
 }
 
@@ -77,5 +77,5 @@ function newElement() {
       document.getElementById(xx).appendChild(li);  
     }
 
-
+    $(".toDoText").val("")
 }
