@@ -11,7 +11,7 @@ function newDiv() {
     var box = document.createElement("div");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
-    box.setAttribute('id', n);
+    box.setAttribute('id', n);//ii
     box.setAttribute('class', "toDoBox")
     box.setAttribute('border', '3px')
     

@@ -33,7 +33,7 @@
     height: auto;
     border-radius: 5px;
     margin: 15px;
-    background-color: #ff6348be;
+    background-color:#dfdbdb;
   
 }
 
@@ -65,6 +65,7 @@ body {
     width: 60px;
     height: 30px;
     border-radius: 5px;
+    background-color: #c5c0c0;
 }
 
 .toDoText {
@@ -105,7 +106,7 @@ body {
 }
 
 .listItem{
-background-color: grey;
+background-color: #ffffff;
 border-radius: 5px;
 margin: 5px;
 padding: 2px;
