@@ -1,15 +1,17 @@
 var listClasses=[]
 var n=0
-var textID=0
+var textID=100
 var btnID=0
 var f=0
 
 
 function newDiv() {
+
+    
     var box = document.createElement("div");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
-    box.setAttribute('ID', n);
+    box.setAttribute('id', n);
     box.setAttribute('class', "toDoBox")
     box.setAttribute('border', '3px')
     
@@ -22,22 +24,33 @@ function newDiv() {
    btn.innerHTML="Add"
    btn.setAttribute('class', "toDoButton")
    btn.setAttribute('class', "button")
+   
    var textField = document.createElement("INPUT");
    textField.setAttribute("type", "text");
-   textField.setAttribute("value", "Add a task")
+   textField.setAttribute("placeholder", "Add a task")
    textField.setAttribute('class', "toDoText")
+
+
+   var header = document.createElement("h1");
+   header.setAttribute('class', 'header')
+   header.innerHTML = inputValue;
 
    btn.appendChild(t);
    btn.setAttribute('ID', btnID);
    btn.setAttribute('onclick', "newElement()")
-   document.getElementById(n).appendChild(btn)
+ 
    textField.appendChild(t);
    textField.setAttribute('ID', textID) 
+
+   document.getElementById(n).appendChild(header)
    document.getElementById(n).appendChild(textField)
+   document.getElementById(n).appendChild(btn)
+   
 
    n++
    textID++
    btnID++
+   document.getElementById('.myInput').innerHTML = ""
    console.log(n)
 }
 
@@ -46,22 +59,23 @@ function newDiv() {
 
 
 function newElement() {
+    var xx = event.target.id
+    var xy = parseInt(xx)
+    var xxx = xy+100
+    var xxxx = xxx.toString();
+
     var li = document.createElement("li");
-    var inputValue = document.getElementById(textID).value;
-    var t = document.createTextNode(textID);
-    li.appendChild(t);
-    li.setAttribute('class', 'listItem') 
+    var inputValue = document.getElementById(xxxx).value;
+    var tt = document.createTextNode(inputValue);
+    li.appendChild(tt);
+    li.setAttribute('class', 'listItem');
 
     if (inputValue === '') {
       return null
     }
      else {
-      document.getElementById("0").appendChild(li);  
+      document.getElementById(xx).appendChild(li);  
     }
 
 
-    document.querySelector('.listItem').addEventListener('click', function(){
-
-document.querySelector('.listItem').style.display = "none"
-    })
 }

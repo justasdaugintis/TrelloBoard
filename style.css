@@ -23,3 +23,83 @@
 .button{
     border: none;
 }
+
+.toDoBox {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+ display: flex;
+ flex-direction: column;
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: #ff6348be;
+  
+}
+
+.AddingButton {
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+
+[id="myInput"] {
+width: 150px;
+}
+
+body {
+   background-color:#ff63489c;
+  
+}
+
+.bigDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.button{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    width: 80px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.toDoText {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    width: 220px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.addBtn2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    background-color:#fc5e42de;
+
+}
+
+.addBtn2:hover{
+    animation-name: add;
+    animation-duration: 1s;
+
+}
+
+@keyframes add {
+    from {background-color:  #f85a3e; }
+    to {background-color: #fc5e42de}
+}
+
+
+.header {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
