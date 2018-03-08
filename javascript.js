@@ -11,7 +11,6 @@ var headerID=1000
 
 
 
-
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
     modal.style.display = "none";
@@ -50,7 +49,7 @@ function newDiv() {
 
    var header = document.createElement("h1");
    header.setAttribute('class', 'header')
-   header.setAttribute('class', headerID)
+   header.setAttribute('ID', headerID)
    header.innerHTML = inputValue;
 
    btn.appendChild(t);
@@ -67,20 +66,24 @@ function newDiv() {
 
    options.push(n)
 
-   
+   var headingz = document.getElementById(textID).textContent
 
    n++
    textID++
    btnID++
 
+   headerID++
+   $("#myInput").val("")
+
+   console.log(options)
 
   
 
    var select = document.querySelector(".changeList"); 
-   var opt = n-1;
+   var opt = headingz;
    var el = document.createElement("option");
    el.textContent = opt;
-   el.value = opt;
+   el.value = n-1;
    select.appendChild(el);
    var columnNumber=document.getElementById("selectNumber").value
    console.log(columnNumber)
