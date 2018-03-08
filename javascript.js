@@ -40,7 +40,7 @@ function newDiv() {
   
    var btn = document.createElement("button");
    btn.setAttribute("border", "3px")
-   btn.innerHTML="Add"
+   btn.innerHTML="ADD"
    btn.setAttribute('class', "toDoButton")
    btn.setAttribute('class', "button")
    
@@ -101,11 +101,12 @@ function newDiv() {
 
     $(".toDoBox").animate({width: "250px", height: "200px"
         });
-    $(".toDoText").animate({width: "200px", height: "100px"
+    $(".toDoText").animate({width: "200px", height: "60px"
     }); 
     
     $(".button").animate({width: "60px", height: "30px"
     });
+ 
     
 }
 }
@@ -122,9 +123,7 @@ function newElement() {
     var tt = document.createTextNode(inputValue);
     li.appendChild(tt);
     li.setAttribute('class', 'listItem');
-   
-   
-});
+
 
  
 
@@ -133,7 +132,7 @@ function newElement() {
       return null
     }
      else {
-   
+     
         document.getElementById(xx).appendChild(li); 
         var list =  document.getElementById(xx).appendChild(li); 
 

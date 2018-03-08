@@ -3,21 +3,21 @@
 .toDoBox {
     display:table;
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Courier New, Courier, monospace;
   
    
     width: 0px;
     height: auto;
     border-radius: 5px;
     margin: 15px;
-    background-color:#dfdbdb;
+    background-color:#f5f6fac9;
   
 }
 
 
 
 .AddingButton {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Courier New, Courier, monospace;
     display:flex;
     flex-direction: column;
     margin: 20px;
@@ -27,34 +27,47 @@
 
 [id="myInput"] {
 width: 150px;
+height: 35px;
 margin: 10px;
+border-radius: 5px;
 }
 
 body {
 
-   background-color:#4a69bd;
+   background-color:#4a69bdcb;
   
 }
 
 .bigDiv{
-display:flex;
-flex-direction: row;
+    margin: 40px;
+    padding: 40px;
+    display:flex;
+    flex-direction: row;
 
    
 }
 
 
 .button{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Courier New, Courier, monospace;
     margin: 10px;
     width: 0px;
     height: 0px;
     border-radius: 5px;
-    background-color: #c5c0c0;
+    background-color: #2e4b996b;
+  
+}
+.button:hover{
+    animation-name: add;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
 }
 
+
+
 .toDoText {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Courier New, Courier, monospace;
     margin: 10px;
     width: 0px;
     height: 0px;
@@ -62,12 +75,12 @@ flex-direction: row;
 }
 
 .addBtn2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Courier New, Courier, monospace;
     margin: 10px;
     padding: 10px;
     width: 100px;
     border-radius: 5px;
-    background-color: #2e4a99;
+    background-color: #2e4b996b;
 
 }
 
@@ -75,12 +88,12 @@ flex-direction: row;
     animation-name: add;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-   animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   
 }
 
 @keyframes add {
-    from {background-color: #213d8b}
+    from {background-color:#2e4b996b;}
     to {background-color: #6f8ad493};
     from {box-shadow: 0px;}
     to {box-shadow: 2px 2px 7px;}
@@ -90,17 +103,17 @@ flex-direction: row;
 
 .header {
     margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Courier New, Courier, monospace;
     font-size: 30px;
 
 }
 
 
 .listItem{
-background-color: #ffffff;
-border-radius: 5px;
-margin: 5px;
-padding: 2px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px;
 }
 
 
@@ -115,12 +128,12 @@ padding: 2px;
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
 }
 
 
 .modal-content {
-    background-color: #fefefe;
+    background-color:#5f74afdc;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -134,7 +147,9 @@ padding: 2px;
     margin: 20px;
 }
 p {
+    font-family: Courier New, Courier, monospace;
     margin: 20px;
+    color: white;
 }
 
 .close {
@@ -168,12 +183,12 @@ p {
 }
 
 .extraClass {
-    animation: item2 0.5s linear;
+    animation: item2 0.2s linear;
 }
 
 @keyframes item {
     from {background-color: #ffffff}
-    to {background-color: #bbb9b9};
+    to {background-color: #f5f6fac9;};
     from {box-shadow: 0px;}
     to {box-shadow: 2px 2px 7px;}
 
