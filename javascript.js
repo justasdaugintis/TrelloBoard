@@ -3,7 +3,21 @@ var n=0
 var textID=100
 var btnID=0
 var f=0
+var modal = document.querySelector('.modal');
+var select = document.querySelector(".changeList"); 
+var options = []; 
+var unique_array=[]
+var headerID=1000
 
+
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+
+document.querySelector(".modal").style.display="none";
 
 function newDiv() {
 
@@ -33,6 +47,7 @@ function newDiv() {
 
    var header = document.createElement("h1");
    header.setAttribute('class', 'header')
+   header.setAttribute('class', headerID)
    header.innerHTML = inputValue;
 
    btn.appendChild(t);
@@ -46,12 +61,21 @@ function newDiv() {
    document.getElementById(n).appendChild(textField)
    document.getElementById(n).appendChild(btn)
    
-
+   options.push(n)
    n++
    textID++
    btnID++
    $("#myInput").val("")
-   console.log(n)
+   console.log(options)
+
+   var select = document.querySelector(".changeList"); 
+   var opt = n-1;
+   var el = document.createElement("option");
+   el.textContent = opt;
+   el.value = opt;
+   select.appendChild(el);
+   var columnNumber=document.getElementById("selectNumber").value
+   console.log(columnNumber)
 }
 
 
@@ -67,6 +91,7 @@ function newElement() {
     li.appendChild(tt);
     li.setAttribute('class', 'listItem');
 
+
  
 
 
@@ -77,17 +102,47 @@ function newElement() {
      
         document.getElementById(xx).appendChild(li); 
         var list =  document.getElementById(xx).appendChild(li); 
+
+        
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
 
     ev.target.classList.toggle('checked');
-
-
-
-    
+    document.querySelector('.modal').style.display="block";
+    function removeDuplicates(arr){
+        for(let i = 0;i < arr.length; i++){
+            if(unique_array.indexOf(arr[i]) == -1){
+                unique_array.push(arr[i])
+            }
+        }
+        return unique_array
     }
+    removeDuplicates(options)
+console.log(unique_array)
+
+  
+        
+}
+
+
 
     $(".toDoText").val("")
 })
      }
     }
+
+
+function changeLists() {
+    var movingItem = document.querySelector(".checked")
+   
+  
+    var columnNumber=document.getElementById("selectNumber").value
+    console.log(columnNumber)
+   var a= document.getElementById("selectNumber").value
+   var b = a.toString()
+   movingBox=document.getElementById(b)
+    movingBox.appendChild(movingItem)
+    movingItem.classList.toggle('checked');
+    modal.style.display = "none";
+   
+}
