@@ -66,7 +66,7 @@ function newDiv() {
    
 
    options.push(n)
-=======
+
    
 
    n++
@@ -84,7 +84,7 @@ function newDiv() {
    select.appendChild(el);
    var columnNumber=document.getElementById("selectNumber").value
    console.log(columnNumber)
-}
+
 
 
  
@@ -98,8 +98,8 @@ function newDiv() {
     $(".Button").animate({width: "100px" 
     });
      
-}
 
+}
 
 
 
