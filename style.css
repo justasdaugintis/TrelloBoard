@@ -1,11 +1,11 @@
 
 .backgroundrad{
-    
-    background: linear-gradient(to bottom left,white, rgba(224, 10, 224, 0.822), black);
+    position:fixed;
+    background: linear-gradient(to bottom left,white, rgba(129, 2, 129, 0.952), black);
     height: 1500px;
     width: 2000px;;
     opacity: 0.8;
-    z-index: -3;
+    z-index: -1;
     margin: -40px -50px -50px -20px;
     -webkit-transform: rotate(-22deg);
     
@@ -15,14 +15,12 @@
     display:table;
     
     font-family: Courier New, Courier, monospace;
-  
-   
     width: 0px;
     height: auto;
     border-radius: 5px;
     margin: 15px;
     background-color:#f5f6fac9;
-  
+
 }
 
 
@@ -44,7 +42,7 @@ border-radius: 5px;
 }
 
 body {
-    background: linear-gradient(to bottom left, rgb(73, 17, 53), rgba(204, 46, 120, 0.849));
+   
    background-color:#8095ce38;
   
 }
@@ -55,6 +53,7 @@ body {
     padding: 40px;
     display:flex;
     flex-direction: row;
+ 
 
    
 }
@@ -66,7 +65,7 @@ body {
     width: 0px;
     height: 0px;
     border-radius: 5px;
-    background-color: #2e4b996b;
+    background-color: rgba(173, 9, 173, 0.952);
   
 }
 .button:hover{
@@ -84,6 +83,7 @@ body {
     width: 0px;
     height: 0px;
     border-radius: 5px;
+    z-index: 2;
 }
 
 .addBtn2 {
@@ -92,7 +92,7 @@ body {
     padding: 10px;
     width: 100px;
     border-radius: 5px;
-    background-color: #2e4b996b;
+    background-color:  rgba(136, 9, 136, 0.952);
 
 }
 
@@ -105,8 +105,9 @@ body {
 }
 
 @keyframes add {
-    from {background-color:#2e4b996b;}
-    to {background-color: #6f8ad493};
+    from {background-color: rgba(136, 9, 136, 0.952);
+    }
+    to {background-color:  rgba(129, 2, 129, 0.315);};
     from {box-shadow: 0px;}
     to {box-shadow: 2px 2px 7px;}
 
@@ -150,6 +151,7 @@ body {
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     opacity: 0.8;
+    z-index: -1;
 }
 
 .shape4 {

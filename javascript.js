@@ -99,11 +99,13 @@ function newDiv() {
 
 // jquery animations
    $(".header").animate({"font-size": "30px"});
+
     $(".toDoBox").animate({width: "250px", height: "180px"
         });
     $(".toDoText").animate({width: "140px", height: "60px"
     }); 
-    
+    $(".button").animate({width: "60px", height: "30px"
+    }); 
 
    
     
