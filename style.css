@@ -104,7 +104,7 @@ body {
 .header {
     margin: 10px;
     font-family: Courier New, Courier, monospace;
-    font-size: 30px;
+    font-size: 25px;
 
 }
 
@@ -190,7 +190,7 @@ p {
     from {background-color: #ffffff}
     to {background-color: #f5f6fac9;};
     from {box-shadow: 0px;}
-    to {box-shadow: 2px 2px 7px;}
+    to {box-shadow: 1px 1px 7px;}
 
 }
 
