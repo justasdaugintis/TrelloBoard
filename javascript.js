@@ -9,6 +9,7 @@ var options = [];
 var unique_array=[]
 var headerID=1000
 
+ 
 
 
 var span = document.getElementsByClassName("close")[0];
@@ -75,6 +76,7 @@ function newDiv() {
    btnID++
 
    headerID++
+   //removes input from text box upon press
    $("#myInput").val("")
 
    console.log(options)
@@ -91,21 +93,20 @@ function newDiv() {
    console.log(columnNumber)
 
 
-   $("#myInput").val("")
+// removes input from text box
 
+   $("#myInput").val("") 
 
+// jquery animations
 
-    $(".toDoBox").animate({width: "250px"
+    $(".toDoBox").animate({width: "250px", height: "200px"
         });
-
-
-    $(".toDoText").animate({width: "200px"
+    $(".toDoText").animate({width: "200px", height: "100px"
     }); 
     
-    $(".Button").animate({width: "100px" 
+    $(".button").animate({width: "60px", height: "30px"
     });
-     
-
+    
 }
 }
 
@@ -121,7 +122,9 @@ function newElement() {
     var tt = document.createTextNode(inputValue);
     li.appendChild(tt);
     li.setAttribute('class', 'listItem');
-
+   
+   
+});
 
  
 
@@ -130,7 +133,7 @@ function newElement() {
       return null
     }
      else {
-     
+   
         document.getElementById(xx).appendChild(li); 
         var list =  document.getElementById(xx).appendChild(li); 
 
@@ -140,6 +143,7 @@ list.addEventListener('click', function(ev) {
 
     ev.target.classList.toggle('checked');
     document.querySelector('.modal').style.display="block";
+    document.querySelector('.modal').classList.add("extraClass");
     function removeDuplicates(arr){
         for(let i = 0;i < arr.length; i++){
             if(unique_array.indexOf(arr[i]) == -1){
@@ -174,5 +178,10 @@ function changeLists() {
     movingItem.classList.toggle('checked');
     modal.style.display = "none";
    
+
+    
 }
+
+
+
 
