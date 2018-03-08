@@ -1,4 +1,15 @@
 
+.backgroundrad{
+    
+    background: linear-gradient(to bottom left,white, rgba(224, 10, 224, 0.822), black);
+    height: 1500px;
+    width: 2000px;;
+    opacity: 0.8;
+    z-index: -3;
+    margin: -40px -50px -50px -20px;
+    -webkit-transform: rotate(-22deg);
+    
+ }
 
 .toDoBox {
     display:table;
@@ -33,12 +44,13 @@ border-radius: 5px;
 }
 
 body {
-
-   background-color:#4a69bdcb;
+    background: linear-gradient(to bottom left, rgb(73, 17, 53), rgba(204, 46, 120, 0.849));
+   background-color:#8095ce38;
   
 }
 
 .bigDiv{
+    position: relative;
     margin: 40px;
     padding: 40px;
     display:flex;
@@ -99,8 +111,100 @@ body {
     to {box-shadow: 2px 2px 7px;}
 
 }
+.shape1 {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left:87%;
+    background-color: #ff6b81;
+    height: 400px;
+    width: 300px;
+    -webkit-transform: rotate(165deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.6;
+}
+.shape2 {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left:86%;
+    background-color: #eccc68;
+    height: 400px;
+    width: 300px;
+    -webkit-transform: rotate(15deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.7;
+}
 
+.shape3 {
+    position: fixed;
+    z-index: 1;
+    top: 70%;
+    left:80%;
+    background-color: #70a1ff;
+    height: 400px;
+    width: 300px;
+    -webkit-transform: rotate(63deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.8;
+}
 
+.shape4 {
+    position: fixed;
+    z-index: 1;
+    top: 26%;
+    left:89%;
+    background-color:#ff4757;
+    height: 400px;
+    width: 300px;
+    -webkit-transform: rotate(-30deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.8;
+}
+.shape5 {
+    position: fixed;
+    z-index: 1;
+    top: 75%;
+    left:55%;
+    background-color: #ff4757;
+    height: 400px;
+    width: 300px;
+    -webkit-transform: rotate(-50deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.5;
+}
+.shape6 {
+    position: fixed;
+    z-index: 1;
+    top: 80%;
+    left:45%;
+    background-color: #ffa502;
+    height: 400px;
+    width: 300px;
+    -webkit-transform: rotate(28deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.9;
+   
+}
+.shape7 {
+    position: fixed;
+    z-index: 1;
+    top: 70%;
+    left:85%;
+    background-color: #1e90ff;
+    height: 400px;
+    width: 300px;
+    -webkit-transform: rotate(-40deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    opacity: 0.3;
+}
 .header {
     margin: 10px;
     font-family: Courier New, Courier, monospace;

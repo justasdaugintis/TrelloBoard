@@ -104,8 +104,7 @@ function newDiv() {
     $(".toDoText").animate({width: "140px", height: "60px"
     }); 
     
-    $(".button").animate({width: "60px", height: "30px"
-    });
+
    
     
 }
