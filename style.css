@@ -27,6 +27,7 @@
 
 [id="myInput"] {
 width: 150px;
+margin: 10px;
 }
 
 body {
@@ -46,8 +47,8 @@ flex-direction: row;
 .button{
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
-    width: 60px;
-    height: 30px;
+    width: 0px;
+    height: 0px;
     border-radius: 5px;
     background-color: #c5c0c0;
 }
@@ -56,13 +57,13 @@ flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     width: 0px;
-    height: 80px;
+    height: 0px;
     border-radius: 5px;
 }
 
 .addBtn2 {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 5px;
+    margin: 10px;
     padding: 10px;
     width: 100px;
     border-radius: 5px;
@@ -90,7 +91,7 @@ flex-direction: row;
 .header {
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
 
 }
 
@@ -124,6 +125,16 @@ padding: 2px;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    display: table;
+    border-radius: 5px;
+   
+}
+.changeList {
+    padding: 10px;
+    margin: 20px;
+}
+p {
+    margin: 20px;
 }
 
 .close {
@@ -156,6 +167,10 @@ padding: 2px;
    animation-timing-function: ease-in;
 }
 
+.extraClass {
+    animation: item2 0.5s linear;
+}
+
 @keyframes item {
     from {background-color: #ffffff}
     to {background-color: #bbb9b9};
@@ -164,4 +179,17 @@ padding: 2px;
 
 }
 
-//
+
+
+@keyframes item2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1
+    }
+}
