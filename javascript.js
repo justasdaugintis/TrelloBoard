@@ -18,12 +18,14 @@ span.onclick = function() {
 
 
 document.querySelector(".modal").style.display="none";
-
+var inputValue = document.getElementById("myInput").value;
 
 function newDiv() {
 
-    
-    
+    if (document.getElementById("myInput").value === ''){
+        return null
+    }
+    else {
     var box = document.createElement("div");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
@@ -105,7 +107,7 @@ function newDiv() {
      
 
 }
-
+}
 
 
 function newElement() {
