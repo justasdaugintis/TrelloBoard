@@ -11,6 +11,7 @@ var headerID=1000
 
 
 
+
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
     modal.style.display = "none";
@@ -19,8 +20,10 @@ span.onclick = function() {
 
 document.querySelector(".modal").style.display="none";
 
+
 function newDiv() {
 
+    
     
     var box = document.createElement("div");
     var inputValue = document.getElementById("myInput").value;
@@ -61,11 +64,16 @@ function newDiv() {
    document.getElementById(n).appendChild(textField)
    document.getElementById(n).appendChild(btn)
    
+
    options.push(n)
+=======
+   
+
    n++
    textID++
    btnID++
    $("#myInput").val("")
+
    console.log(options)
 
    var select = document.querySelector(".changeList"); 
@@ -77,6 +85,22 @@ function newDiv() {
    var columnNumber=document.getElementById("selectNumber").value
    console.log(columnNumber)
 }
+
+
+ 
+    $(".toDoBox").animate({width: "250px"
+        });
+
+
+    $(".toDoText").animate({width: "200px"
+    }); 
+    
+    $(".Button").animate({width: "100px" 
+    });
+     
+}
+
+
 
 
 function newElement() {
@@ -126,6 +150,7 @@ console.log(unique_array)
 
 
 
+
     $(".toDoText").val("")
 })
      }
@@ -146,3 +171,4 @@ function changeLists() {
     modal.style.display = "none";
    
 }
+
