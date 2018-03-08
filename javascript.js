@@ -55,8 +55,14 @@ function newDiv() {
    $("#myInput").val("")
 
  
-   
+    $(".toDoBox").animate({width: "250px"
+        });
 
+    $(".toDoText").animate({width: "200px"
+    }); 
+    
+    $(".Button").animate({width: "100px" 
+    });
      
 }
 
