@@ -81,9 +81,9 @@ function newDiv() {
 
   
 
-   var select = document.querySelector(".changeList"); 
-   var opt = headingz;
-   var el = document.createElement("option");
+   var select = document.querySelector(".changeList");  // adding headers to define div boxes in the drop down select menu
+   var opt = headingz;   
+   var el = document.createElement("option"); // creates the option
    el.textContent = opt;
    el.value = n-1;
    select.appendChild(el);
@@ -111,7 +111,7 @@ function newDiv() {
 
 
 function newElement() {
-    var xx = event.target.id
+    var xx = event.target.id  // creating a new task in the list
     var xy = parseInt(xx)
     var xxx = xy+100
     var xxxx = xxx.toString();
@@ -138,7 +138,7 @@ function newElement() {
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
 
-    ev.target.classList.toggle('checked');
+    ev.target.classList.toggle('checked'); // adding list items
     document.querySelector('.modal').style.display="block";
     function removeDuplicates(arr){
         for(let i = 0;i < arr.length; i++){
@@ -162,10 +162,10 @@ console.log(unique_array)
 
 
 function changeLists() {
-    var movingItem = document.querySelector(".checked")
+    var movingItem = document.querySelector(".checked") // changing lists
    
   
-    var columnNumber=document.getElementById("selectNumber").value
+    var columnNumber=document.getElementById("selectNumber").value  // number of the list
     console.log(columnNumber)
    var a= document.getElementById("selectNumber").value
    var b = a.toString()
