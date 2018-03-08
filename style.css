@@ -137,7 +137,7 @@ body {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 40%;
     display: table;
     border-radius: 5px;
    
@@ -153,7 +153,7 @@ p {
 }
 
 .close {
-    color: #aaaaaa;
+    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
