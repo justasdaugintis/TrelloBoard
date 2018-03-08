@@ -72,9 +72,9 @@ function newDiv() {
    n++
    textID++
    btnID++
-   $("#myInput").val("")
 
-   console.log(options)
+
+  
 
    var select = document.querySelector(".changeList"); 
    var opt = n-1;
@@ -86,8 +86,10 @@ function newDiv() {
    console.log(columnNumber)
 
 
+   $("#myInput").val("")
 
- 
+
+
     $(".toDoBox").animate({width: "250px"
         });
 
@@ -145,15 +147,12 @@ list.addEventListener('click', function(ev) {
 console.log(unique_array)
 
   
-        
+
 }
-
-
-
-
-    $(".toDoText").val("")
+  
 })
      }
+     $(".toDoText").val("") 
     }
 
 
