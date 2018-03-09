@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC%7CAllerta+Stencil%7CCinzel+Decorative%7CLimelight');
+
 
 .backgroundrad{
     position:fixed;
@@ -14,8 +16,8 @@
 
 .toDoBox {
     display:table;
-    
-    font-family: Courier New, Courier, monospace;
+    font-family: "Allerta Stencil", monospace;
+    font-size: 13px;
     width: 0px;
     height: auto;
     border-radius: 5px;
@@ -27,7 +29,7 @@
 
 
 .AddingButton {
-    font-family: Courier New, Courier, monospace;
+    font-family: "Limelight", Courier, monospace;
     display:flex;
     flex-direction: column;
     margin: 20px;
@@ -40,6 +42,7 @@ width: 150px;
 height: 35px;
 margin: 10px;
 border-radius: 5px;
+font-family: "Allerta Stencil"
 }
 
 body {
@@ -61,7 +64,7 @@ body {
 
 
 .button{
-    font-family: Courier New, Courier, monospace;
+    font-family: "Allerta Stencil", Courier, monospace;
     margin: 10px;
     width: 0px;
     height: 0px;
@@ -79,7 +82,7 @@ body {
 
 
 .toDoText {
-    font-family: Courier New, Courier, monospace;
+    font-family: "Allerta Stencil", Courier, monospace;
     margin: 10px;
     width: 0px;
     height: 0px;
@@ -88,7 +91,7 @@ body {
 }
 
 .addBtn2 {
-    font-family: Courier New, Courier, monospace;
+    font-family: "Allerta Stencil", Courier, monospace;
     margin: 10px;
     padding: 10px;
     width: 100px;
@@ -210,7 +213,7 @@ body {
 }
 .header {
     margin: 10px;
-    font-family: Courier New, Courier, monospace;
+    font-family: 'Alegreya SC', monospace;
     font-size: 25px;
 
 }
