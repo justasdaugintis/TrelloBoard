@@ -39,7 +39,6 @@
 
 [id="myInput"] {
 width: 150px;
-height: 35px;
 margin: 10px;
 border-radius: 5px;
 font-family: "Allerta Stencil"
@@ -79,8 +78,6 @@ body {
     animation-timing-function: ease-in;
 }
 
-
-
 .toDoText {
     font-family: "Allerta Stencil", Courier, monospace;
     margin: 10px;
@@ -104,7 +101,7 @@ body {
     animation-name: add;
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+   animation-timing-function: ease-in;
   
 }
 
@@ -220,10 +217,10 @@ body {
 
 
 .listItem{
-    background-color: #ffffff;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 2px;
+background-color: #ffffff;
+border-radius: 5px;
+margin: 5px;
+padding: 2px;
 }
 
 
@@ -238,16 +235,16 @@ body {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 
 .modal-content {
-    background-color:#5f74afdc;
+    background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
+    width: 80%;
     display: table;
     border-radius: 5px;
    
@@ -257,13 +254,11 @@ body {
     margin: 20px;
 }
 p {
-    font-family: Courier New, Courier, monospace;
     margin: 20px;
-    color: white;
 }
 
 .close {
-    color: white;
+    color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -293,12 +288,12 @@ p {
 }
 
 .extraClass {
-    animation: item2 0.2s linear;
+    animation: item2 0.5s linear;
 }
 
 @keyframes item {
     from {background-color: #ffffff}
-    to {background-color: #f5f6fac9;};
+    to {background-color: #bbb9b9};
     from {box-shadow: 0px;}
     to {box-shadow: 1px 1px 7px;}
 
