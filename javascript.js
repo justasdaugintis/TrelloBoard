@@ -9,7 +9,6 @@ var options = [];
 var unique_array=[]
 var headerID=1000
 
- 
 
 
 var span = document.getElementsByClassName("close")[0];
@@ -21,12 +20,24 @@ span.onclick = function() {
 document.querySelector(".modal").style.display="none";
 var inputValue = document.getElementById("myInput").value;
 
-function newDiv() {
+//Creating a new List Box
 
+function newDiv() {
+    
     if (document.getElementById("myInput").value === ''){
         return null
     }
     else {
+        
+        anim1()
+        anim2()
+        anim3()
+        anim4()
+        anim5()
+        anim6()
+        anim7()
+        
+       
     var box = document.createElement("div");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
@@ -98,22 +109,17 @@ function newDiv() {
    $("#myInput").val("") 
 
 // jquery animations
-   $(".header").animate({"font-size": "30px"});
 
-    $(".toDoBox").animate({width: "250px", height: "180px"
-        });
-    $(".toDoText").animate({width: "140px", height: "60px"
-    }); 
-    $(".button").animate({width: "60px", height: "30px"
-    }); 
 
-   
-    
 }
 }
 
 
+
+
+// creating a list item
 function newElement() {
+    change()
     var xx = event.target.id
     var xy = parseInt(xx)
     var xxx = xy+100
@@ -164,11 +170,11 @@ console.log(unique_array)
      $(".toDoText").val("") 
     }
 
-
+//Changing the list of the items
 function changeLists() {
     var movingItem = document.querySelector(".checked")
-   
-  
+    change2()
+
     var columnNumber=document.getElementById("selectNumber").value
     console.log(columnNumber)
    var a= document.getElementById("selectNumber").value
@@ -183,5 +189,98 @@ function changeLists() {
 }
 
 
+//Animation Functions 
+
+function anim1(){
+    $(".shape1").animate({"top":"50%", "left": "87%"})
+    $(".shape2").delay(250)
+}
+/*.shape1 {
+        position: fixed;
+        z-index: 1;
+        top: 50%;
+ left:87%;
+*/ 
+function anim2(){
+       
+     $(".shape2").animate({"top":"45%", "left": "76%"})
+        //$(".shape1").delay(200)
+}
+  /*      .shape2 {
+            position: fixed;
+            z-index: 1;
+            top: 45%;
+            left:76%;
+*/
+function anim3(){
+        $(".shape3").animate({"top":"65%", "left": "69%"})
+        //$(".shape4").delay(70)
+}
+   /*             .shape3 {
+                position: fixed;
+                z-index: 1;
+                top: 65%;
+               left:69%;
+*/
+function anim4(){
+        $(".shape4").animate({"top":"15%", "left": "90%"})
+      //  $(".shape3").delay(300)
+}
+     /*            .shape4 {
+                    position: fixed;
+                    z-index: 1;
+                    top: 15%;
+                    left:90%;
+*/
+function anim5(){
+        $(".shape5").animate({"top":"65%", "left": "55%"})
+        //$(".shape6").delay(100)
+}
+    /*                 .shape5 {
+                        position: fixed;
+                        z-index: 1;
+                        top: 65%;
+                        left:55%;
+*/
+function anim6(){
+        $(".shape6").animate({"top":"80%", "left": "45%"})
+        //$(".shape5").delay(30)
+}
+   /*                       .shape6 {
+                            position: fixed;
+                            z-index: 1;
+                            top: 80%;
+                            left:45%;
+*/
+function anim7(){
+        $(".shape7").animate({"top":"55%", "left": "70%"})
+       // $(".shape7").delay(20)
+}
+       /*                      .shape7 {
+                                position: fixed;
+                                z-index: 1;
+                                top: 55%;
+                                left:70%;
+*/
 
 
+function change(){
+ 
+    $(".shape1").animate({"top":"50%", "left": "87%"})
+    $(".shape2").animate({"top":"35%", "left": "70%"})
+    $(".shape3").animate({"top":"35%", "left": "70%"})
+    $(".shape4").animate({"top":"18%", "left": "90%"})
+    $(".shape5").animate({"top":"35%", "left": "85%"})
+    $(".shape6").animate({"top":"80%", "left": "45%"})
+    $(".shape7").animate({"top":"55%", "left": "30%"})
+}
+
+function change2(){
+    $(".shape1").animate({"top":"54%", "left": "80%"})
+    $(".shape2").animate({"top":"49%", "left": "73%"})
+    $(".shape3").animate({"top":"69%", "left": "62%"})
+    $(".shape4").animate({"top":"12%", "left": "91%"})
+    $(".shape5").animate({"top":"43%", "left": "70%"})
+    $(".shape6").animate({"top":"80%", "left": "45%"})
+    $(".shape7").animate({"top":"55%", "left": "70%"})
+}

@@ -5,11 +5,11 @@
     position:fixed;
     top: -20%;
     background: linear-gradient(to bottom left,white,rgb(241, 232, 149) , rgb(228, 21, 21));
-    height: 3000px;
-    width: 1700px;;
-    opacity: 0.8;
+    height: 2000px;
+    width: 1900px;;
+    opacity: 0.9;
     z-index: -3;
-    margin: -40px -50px -100px -40px;
+    margin: -140px -50px -150px -40px;
     -webkit-transform: rotate(-22deg);
     
  }
@@ -18,11 +18,12 @@
     display:table;
     font-family: "Allerta Stencil", monospace;
     font-size: 13px;
-    width: 0px;
+    width: 250px;
     height: auto;
     border-radius: 5px;
     margin: 15px;
-    background-color: #70a1ff;
+    background-color: #70a2ffc4;
+    z-index: 2;
     
 }
 
@@ -33,8 +34,8 @@
     display:flex;
     flex-direction: column;
     margin: 20px;
-    order: 2
-    
+    order: 2;
+    z-index: 2;
 }
 
 [id="myInput"] {
@@ -65,10 +66,10 @@ body {
 .button{
     font-family: "Allerta Stencil", Courier, monospace;
     margin: 10px;
-    width: 0px;
-    height: 0px;
+    width: 60px;
+    height: 30px;
     border-radius: 5px;
-    background-color: #70a1ff;
+    background-color:#ff4756c9;
   
 }
 .button:hover{
@@ -81,19 +82,20 @@ body {
 .toDoText {
     font-family: "Allerta Stencil", Courier, monospace;
     margin: 10px;
-    width: 0px;
-    height: 0px;
+    width: 140px;
+    height: 60px;
     border-radius: 5px;
     z-index: 2;
 }
 
 .addBtn2 {
-    font-family: "Allerta Stencil", Courier, monospace;
+    font-family: 'Alegreya SC', monospace;
     margin: 10px;
     padding: 10px;
     width: 100px;
     border-radius: 5px;
-    background-color:  #70a1ff;
+    background-color: #ff4756c9;
+    z-index: 2;
 
 }
 
@@ -106,9 +108,9 @@ body {
 }
 
 @keyframes add {
-    from {background-color: #ff6b81;}
+    from {background-color: #ff4756c9;}
     
-    to {background-color: #ff6b8177;};
+    to {background-color:#ff47568a;};
     from {box-shadow: 0px;}
     to {box-shadow: 2px 2px 7px;}
 
@@ -116,10 +118,10 @@ body {
 .shape1 {
     position: fixed;
     z-index: 1;
-    top: 50%;
-    left:87%;
-    background-color: #ff6b81;
-    height: 400px;
+    top: 150%;
+    left:190%;
+    background-color: #2ed573;
+    height: 500px;
     width: 300px;
     -webkit-transform: rotate(165deg);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -129,12 +131,12 @@ body {
 .shape2 {
     position: fixed;
     z-index: 1;
-    top: 50%;
-    left:86%;
+    top: 200%;
+    left:140%;
     background-color: #eccc68;
-    height: 400px;
-    width: 300px;
-    -webkit-transform: rotate(15deg);
+    height: 700px;
+    width: 600px;
+    -webkit-transform: rotate(10deg);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     opacity: 0.7;
@@ -143,27 +145,27 @@ body {
 .shape3 {
     position: fixed;
     z-index: 1;
-    top: 70%;
-    left:80%;
+    top: 200%;
+    left:150%;
     background-color: #70a1ff;
-    height: 400px;
+    height: 500px;
     width: 300px;
-    -webkit-transform: rotate(63deg);
+    -webkit-transform: rotate(47deg);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    opacity: 0.8;
-    z-index: -1;
+    opacity: 0.6;
+    z-index: 1
 }
 
 .shape4 {
     position: fixed;
     z-index: 1;
-    top: 27%;
-    left:90%;
+    top: 150%;
+    left:120%;
     background-color:#ff4757;
-    height: 400px;
-    width: 300px;
-    -webkit-transform: rotate(-30deg);
+    height: 500px;
+    width: 350px;
+    -webkit-transform: rotate(-32deg);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     opacity: 0.8;
@@ -171,10 +173,10 @@ body {
 .shape5 {
     position: fixed;
     z-index: 1;
-    top: 75%;
-    left:55%;
-    background-color: #ff4757;
-    height: 400px;
+    top: 150%;
+    left:160%;
+    background-color: #7bed9f;
+    height: 600px;
     width: 300px;
     -webkit-transform: rotate(-50deg);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -184,9 +186,9 @@ body {
 .shape6 {
     position: fixed;
     z-index: 1;
-    top: 80%;
-    left:45%;
-    background-color: #ffa502;
+    top: 150%;
+    left:130%;
+    background-color: #eccc68;
     height: 400px;
     width: 300px;
     -webkit-transform: rotate(28deg);
@@ -198,20 +200,20 @@ body {
 .shape7 {
     position: fixed;
     z-index: 1;
-    top: 70%;
-    left:85%;
-    background-color: #1e90ff;
-    height: 400px;
-    width: 300px;
-    -webkit-transform: rotate(-40deg);
+    top: 150%;
+    left:120%;
+    background-color: #ff4757;
+    height: 600px;
+    width: 400px;
+    -webkit-transform: rotate(-48deg);
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .header {
     margin: 10px;
     font-family: 'Alegreya SC', monospace;
-    font-size: 25px;
+    font-size:30px;
 
 }
 
@@ -227,7 +229,7 @@ padding: 2px;
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 5; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -240,25 +242,28 @@ padding: 2px;
 
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #2ed574a4;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    border: 1px solid rgb(241, 241, 241);
+    width: 40%;
     display: table;
-    border-radius: 5px;
+    border-radius: 5px;s
    
 }
 .changeList {
     padding: 10px;
     margin: 20px;
+    font-family: 'Alegreya SC', monospace;
 }
 p {
+    color: white;
     margin: 20px;
+    font-family: 'Alegreya SC', monospace;
 }
 
 .close {
-    color: #aaaaaa;
+    color:white;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -293,7 +298,7 @@ p {
 
 @keyframes item {
     from {background-color: #ffffff}
-    to {background-color: #bbb9b9};
+    to {background-color: #93afe293;};
     from {box-shadow: 0px;}
     to {box-shadow: 1px 1px 7px;}
 
