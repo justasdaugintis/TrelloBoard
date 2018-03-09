@@ -1,12 +1,13 @@
 
 .backgroundrad{
     position:fixed;
-    background: linear-gradient(to bottom left,white, rgba(129, 2, 129, 0.952), black);
-    height: 1500px;
-    width: 2000px;;
+    top: -20%;
+    background: linear-gradient(to bottom left,white,rgb(241, 232, 149) , rgb(228, 21, 21));
+    height: 3000px;
+    width: 1700px;;
     opacity: 0.8;
-    z-index: -1;
-    margin: -40px -50px -50px -20px;
+    z-index: -3;
+    margin: -40px -50px -100px -40px;
     -webkit-transform: rotate(-22deg);
     
  }
@@ -19,8 +20,8 @@
     height: auto;
     border-radius: 5px;
     margin: 15px;
-    background-color:#f5f6fac9;
-
+    background-color: #70a1ff;
+    
 }
 
 
@@ -43,7 +44,7 @@ border-radius: 5px;
 
 body {
    
-   background-color:#8095ce38;
+    background: linear-gradient(to left, white, #c2baa4,, #91836f);
   
 }
 
@@ -65,7 +66,7 @@ body {
     width: 0px;
     height: 0px;
     border-radius: 5px;
-    background-color: rgba(173, 9, 173, 0.952);
+    background-color: #70a1ff;
   
 }
 .button:hover{
@@ -92,7 +93,7 @@ body {
     padding: 10px;
     width: 100px;
     border-radius: 5px;
-    background-color:  rgba(136, 9, 136, 0.952);
+    background-color:  #70a1ff;
 
 }
 
@@ -105,9 +106,9 @@ body {
 }
 
 @keyframes add {
-    from {background-color: rgba(136, 9, 136, 0.952);
-    }
-    to {background-color:  rgba(129, 2, 129, 0.315);};
+    from {background-color: #ff6b81;}
+    
+    to {background-color: #ff6b8177;};
     from {box-shadow: 0px;}
     to {box-shadow: 2px 2px 7px;}
 
@@ -157,8 +158,8 @@ body {
 .shape4 {
     position: fixed;
     z-index: 1;
-    top: 26%;
-    left:89%;
+    top: 27%;
+    left:90%;
     background-color:#ff4757;
     height: 400px;
     width: 300px;
